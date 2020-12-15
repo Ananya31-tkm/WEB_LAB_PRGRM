@@ -1,0 +1,6 @@
+Links to remote repository:
+
+
+HTTPS: "https://github.com/Ananya31-tkm/WEB_LAB_PRGRM.git"
+
+SSH:    "git@github.com:Ananya31-tkm/WEB_LAB_PRGRM.git"

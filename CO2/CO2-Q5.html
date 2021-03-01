@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function setnewImage(){
+document.getElementById("img1").src="tkmce.jpg";
+document.getElementById("demo").innerHTML = "T K M College of Engineering, the  first Government- aided engineering college in Kerala, is situated in the cashew hub of Kerala, City of Kollam.";
+}
+function setoldImage(){
+document.getElementById("img1").src="Tkmlogo.jpg";
+document.getElementById("new").innerHTML = "TKM College of Engineering celebrated six decades of excellence, as the byword for eminence in technical education, in 2019.";
+}
+</script>
+</head>
+<body bgcolor='lightcyan'>
+<p id="demo"></p>
+<h3 id="new"></h3>
+<img id="img1" onmouseover="setnewImage()" onmouseout="setoldImage()" src="Tkmlogo.jpg" width='300'/>
+</body>
+</html>

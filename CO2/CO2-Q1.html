@@ -25,14 +25,7 @@
                     <th>Search a text</th>
                     <td> <input type="text" id="input_search" name="input_search"></td>
                 </tr>
-                <tr>
-                    <th>Slice start</th>
-                    <td><input type="text" id="slice_s" name="slice_s"></td>
-                </tr>
-                <tr>
-                    <th>Slice end</th>
-                    <td><input type="text" id="slice_e" name="slice_e"></td>
-                </tr>
+            
                 <tr>
                     <th>Replace the word</th>
                     <td><input type="text" id="replace_f"></td>
@@ -78,8 +71,6 @@
         function string_func() {
             let input = document.getElementById('input_string').value;
             let search = document.getElementById('input_search').value;
-            let slice_s = document.getElementById('slice_s').value;
-            let slice_e = document.getElementById('slice_e').value;
             let replace_f = document.getElementById('replace_f').value;
             let replace_s = document.getElementById('replace_s').value;
 
@@ -89,8 +80,8 @@
             let list_items;
             list_items = li_O + 'Length of string is  : ' + input.length + li_C;
             list_items += li_O + 'First index of ' + search + ' is ' + input.indexOf(search) + li_C;
-            list_items += li_O + 'Search ' + search + ' is ' + input.search(search) + li_C;
-            list_items += li_O + 'replace ' + replace_f + ' with ' + replace_s + ' is ' + input.replace(replace_f, replace_s) + li_C;
+            list_items += li_O + 'Searches ' + search + ' at Position: ' + input.search(search) + li_C;
+            list_items += li_O + 'After Replacing the word ' + replace_f + ' with ' + replace_s + ' is ' + input.replace(replace_f, replace_s) + li_C;
             list_items += li_O + 'Uppercase  :  ' + input.toUpperCase() + li_C;
             list_items += li_O + 'lowercase  :  ' + input.toLowerCase() + li_C;
 
@@ -109,8 +100,6 @@
             list_items += li_O + ''+input+' raise to '+power+' is : ' + Math.pow(input,power) + li_C;
             list_items += li_O + 'Square root of  '+input+' is : ' + Math.sqrt(input) + li_C;
             list_items += li_O + 'Absolute value  of  '+input+' is : ' + Math.abs(input) + li_C;
-            list_items += li_O + 'Ceil value  of  '+input+' is : ' + Math.ceil(input) + li_C;
-            list_items += li_O + 'Floor value  of  '+input+' is : ' + Math.floor(input) + li_C;
             list_items += li_O + 'Sin value  of  '+input+' is : ' + Math.sin(input* Math.PI / 180) + li_C;
             list_items += li_O + 'A Random number is : ' + Math.random() + li_C;
 
